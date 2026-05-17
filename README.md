@@ -35,7 +35,10 @@ TuGraph 是一款高性能图数据库系统，支持图数据存储、图建模
 
 部署成功界面如下：
 
-![部署 TuGraph 实例](images/01_tugraph_deploy.png)
+<p align="center">
+  <img src="images/01_tugraph_deploy.png" alt="部署 TuGraph 实例" width="850">
+</p>
+<p align="center"><b>图1 TuGraph 实例部署界面</b></p>
 
 ### 2.2 登录 TuGraph 平台
 
@@ -43,7 +46,10 @@ TuGraph 是一款高性能图数据库系统，支持图数据存储、图建模
 
 登录成功界面如下：
 
-![登录 TuGraph 平台](images/02_tugraph_login.png)
+<p align="center">
+  <img src="images/02_tugraph_login.png" alt="登录 TuGraph 平台" width="850">
+</p>
+<p align="center"><b>图2 TuGraph 平台登录成功界面</b></p>
 
 ---
 
@@ -55,7 +61,10 @@ TuGraph 是一款高性能图数据库系统，支持图数据存储、图建模
 
 新建图项目界面如下：
 
-![新建图项目](images/03_create_graph.png)
+<p align="center">
+  <img src="images/03_create_graph.png" alt="新建图项目" width="850">
+</p>
+<p align="center"><b>图3 新建图项目界面</b></p>
 
 ### 3.2 图模型设计
 
@@ -83,23 +92,42 @@ Transaction(txId1) -> Transaction(txId2)
 
 图模型如下：
 
-![图建模](images/04_graph_schema.png)
+<p align="center">
+  <img src="images/04_graph_schema.png" alt="图建模" width="850">
+</p>
+<p align="center"><b>图4 Transaction 节点与 Flow_to 边的图模型</b></p>
 
 ### 3.3 导入点数据
 
 在完成图模型设计后，首先导入点数据。本文将 `elliptic_txs_classes.csv` 作为点数据文件导入 TuGraph，并将其映射到 `Transaction` 点类型。其中，CSV 文件中的 `txId` 字段映射为交易节点编号，`class` 字段映射为交易类别属性 `tx_class`。
 
-点数据导入界面如下：
-![导入点数据](images/05_import_nodes0.png)
-![导入成功](images/05_import_nodes.png)
+点数据导入过程如下：
+
+<p align="center">
+  <img src="images/05_import_nodes0.png" alt="点数据导入配置界面" width="850">
+</p>
+<p align="center"><b>图5 点数据导入配置界面</b></p>
+
+<p align="center">
+  <img src="images/05_import_nodes.png" alt="点数据导入成功界面" width="850">
+</p>
+<p align="center"><b>图6 点数据导入成功界面</b></p>
 
 ### 3.4 导入边数据
 
 随后导入边数据。本文将 `elliptic_txs_edgelist.csv` 作为边数据文件导入 TuGraph，并将其映射到 `Flow_to` 边类型。边的起点和终点均为 `Transaction` 节点，其中 `txId1` 映射为起点交易编号，`txId2` 映射为终点交易编号。
 
-边数据导入界面如下：
-![导入边数据](images/06_import_edges0.png)
-![导入成功](images/06_import_edges.png)
+边数据导入过程如下：
+
+<p align="center">
+  <img src="images/06_import_edges0.png" alt="边数据导入配置界面" width="850">
+</p>
+<p align="center"><b>图7 边数据导入配置界面</b></p>
+
+<p align="center">
+  <img src="images/06_import_edges.png" alt="边数据导入成功界面" width="850">
+</p>
+<p align="center"><b>图8 边数据导入成功界面</b></p>
 
 ---
 
@@ -123,7 +151,10 @@ LIMIT 10;
 
 查询结果如下：
 
-![基础查询结果](images/07_basic_query.png)
+<p align="center">
+  <img src="images/07_basic_query.png" alt="基础查询结果" width="850">
+</p>
+<p align="center"><b>图9 基础查询结果：前十条资金流向边</b></p>
 
 ### 4.2 复杂查询：两跳资金流路径追踪
 
@@ -142,10 +173,12 @@ LIMIT 10;
 
 查询结果如下：
 
-![复杂查询结果](images/08_complex_query.png)
+<p align="center">
+  <img src="images/08_complex_query.png" alt="复杂查询结果" width="850">
+</p>
+<p align="center"><b>图10 复杂查询结果：两跳资金流路径追踪</b></p>
 
 ---
-
 
 ## 5. 实验总结
 
